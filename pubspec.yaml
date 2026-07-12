@@ -1,0 +1,43 @@
+name: flixora_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  # State Management & DI
+  flutter_bloc: ^8.1.6
+  get_it: ^7.6.0
+  
+  # Backend & Network
+  supabase_flutter: ^2.6.0
+  dio: ^5.4.0
+  
+  # Video Player & Customization
+  chewie: ^1.8.1
+  video_player: ^2.8.2
+  
+  # UI & Tools
+  cached_network_image: ^3.3.1
+  glassmorphism: ^3.0.0
+  path_provider: ^2.1.2
+
+  # رفع تداخل نسخه با SDK فلاتر
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  
