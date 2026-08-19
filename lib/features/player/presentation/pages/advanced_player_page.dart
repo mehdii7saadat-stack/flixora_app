@@ -40,12 +40,13 @@ class _AdvancedPlayerPageState extends State<AdvancedPlayerPage> {
       showControlsOnInitialize: false,
       additionalOptions: (context) => [
         OptionItem(
-          // در نسخه‌های استاندارد چویی از OptionItem یا OptionsContext استفاده می‌شود
-          onTap: () => debugPrint("باز کردن لیست زیرنویس‌ها"),
+          // تغییر () به (playerContext) برای رفع ارور نوع آرگومان
+          onTap: (playerContext) => debugPrint("باز کردن لیست زیرنویس‌ها"),
           iconData: Icons.subtitles,
           title: 'Subtitles / زیرنویس',
         ),
       ],
+      // ادامه‌ی کدها (بستن براکت‌ها و پرانتزهای ChewieController) ...
       errorBuilder: (context, errorMessage) {
         return Center(
           child: Text(
